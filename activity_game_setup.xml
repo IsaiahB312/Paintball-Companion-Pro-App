@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.paintballcompanionpro.GameSetup"
+    android:background="@drawable/paintball_bg">
+
+    <EditText
+        android:id="@+id/edit_text_input"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/aldrich"
+        android:hint="Minutes"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textSize="14sp"
+        android:background="@drawable/tinted_text_container"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hintColor"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_set"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edit_text_input"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/aldrich"
+        android:text="Set"
+        android:textSize="12sp"
+        android:background="@drawable/in_use_button_states"
+        android:textColor="@drawable/pressed_text_color"/>
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/aldrich"
+        android:text="00:00"
+        android:textColor="@android:color/black"
+        android:textSize="48sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_start_pause"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@font/aldrich"
+        android:text="start"
+        android:textSize="12sp"
+        android:background="@drawable/in_use_button_states"
+        android:textColor="@drawable/pressed_text_color"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_reset"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/aldrich"
+        android:text="reset"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:layout_below="@id/button_start_pause"
+        android:background="@drawable/in_use_button_states"
+        android:textColor="@drawable/pressed_text_color"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/team1Title"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_marginTop="35dp"
+        android:text="Team 1"
+        android:fontFamily="@font/aldrich"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:background="@drawable/tinted_title_background"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/team1"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/team1Title"
+        android:layout_above="@+id/team2Title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/tinted_title_background"/>
+
+    <TextView
+        android:id="@+id/team2Title"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/team2"
+        android:text="Team 2"
+        android:fontFamily="@font/aldrich"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:background="@drawable/tinted_title_background"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/team2"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+            android:background="@drawable/tinted_title_background"/>
+
+</RelativeLayout>

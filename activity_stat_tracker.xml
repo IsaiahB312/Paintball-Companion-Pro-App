@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatTracker"
+    android:background="@drawable/stats_background"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/statsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Stats"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tinted_title_background"
+        android:textColor="@color/white"
+        android:fontFamily="@font/punishment"
+        android:textSize="48sp"/>
+
+    <TextView
+        android:id="@+id/elims"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Total Eliminations:"
+        android:layout_below="@+id/statsTitle"
+        android:background="@drawable/tinted_title_background"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aldrich"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/elimsNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="0"
+        android:layout_below="@+id/statsTitle"
+        android:background="@drawable/tinted_text_container"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aldrich"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/headshots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/elims"
+        android:text="Total Headshots:"
+        android:background="@drawable/tinted_title_background"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aldrich"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/headshotCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/elimsNum"
+        android:text="0"
+        android:background="@drawable/tinted_text_container"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aldrich"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/timesCF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/headshots"
+        android:text="Total Flag Captures:"
+        android:background="@drawable/tinted_title_background"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aldrich"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/timesCFcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/headshotCount"
+        android:text="0"
+        android:background="@drawable/tinted_text_container"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aldrich"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/timesEliminated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/timesCF"
+        android:text="Total Deaths:"
+        android:background="@drawable/tinted_title_background"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aldrich"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/timesEliminatedCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/timesCFcount"
+        android:text="0"
+        android:background="@drawable/tinted_text_container"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aldrich"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/ratio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timesEliminated"
+        android:text="E/D Ratio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/tinted_title_background"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aldrich"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/ratioNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+        android:layout_below="@id/ratio"
+        android:background="@drawable/tinted_title_background"
+        android:textColor="@color/white"
+        android:text="0.00"
+        android:fontFamily="@font/punishment"
+        android:textSize="62sp"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/goUpdate"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/in_use_button_states"
+        android:text="Update Statistics"
+        android:textColor="@drawable/pressed_text_color"
+        android:layout_below="@+id/ratioNumber"
+        android:layout_marginTop="40dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mainMenu"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/in_use_button_states"
+        android:text="Main Menu"
+        android:textColor="@drawable/pressed_text_color"
+        android:layout_below="@+id/goUpdate"
+        android:layout_marginTop="40dp"/>
+
+</RelativeLayout>

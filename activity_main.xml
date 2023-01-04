@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/menu_background">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Paintball Companion Pro"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/punishment"
+        android:textColor="@color/white">
+    </TextView>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/aldrich"
+        android:hint="Username"
+        android:textColor="@color/white"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/hintColor"
+        android:background="@drawable/edit_text_border">
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/username"
+        android:fontFamily="@font/aldrich"
+        android:inputType="textPassword"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/white"
+        android:paddingLeft="10dp"
+        android:background="@drawable/edit_text_border">
+    </EditText>
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Retype Password"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/password"
+        android:fontFamily="@font/aldrich"
+        android:inputType="textPassword"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/white"
+        android:paddingLeft="10dp"
+        android:background="@drawable/edit_text_border">
+    </EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sign_up"
+        android:background="@drawable/in_use_button_states"
+        android:backgroundTint="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repassword"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/aldrich"
+        android:text="Sign Up"
+        android:textColor="@drawable/pressed_text_color">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sign_in"
+        android:background="@drawable/in_use_button_states"
+        android:backgroundTint="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to sign in page"
+        android:textColor="@drawable/pressed_text_color"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/sign_up"
+        android:fontFamily="@font/aldrich">
+    </androidx.appcompat.widget.AppCompatButton>
+
+</RelativeLayout>

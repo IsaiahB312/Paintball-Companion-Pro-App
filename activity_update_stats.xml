@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateStats"
+    android:background="@drawable/stats_background">
+
+    <EditText
+        android:id="@+id/inputElims"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:hint="Update Eliminations"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/tinted_text_container"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/white">
+    </EditText>
+
+    <EditText
+        android:id="@+id/inputHeadshots"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:hint="Update Headshots"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/inputElims"
+        android:background="@drawable/tinted_text_container"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/white"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/inputFC"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:hint="Update Flag Captures"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/inputHeadshots"
+        android:background="@drawable/tinted_text_container"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/white">
+    </EditText>
+
+    <EditText
+        android:id="@+id/inputDeaths"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:hint="Update Deaths"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/inputFC"
+        android:background="@drawable/tinted_text_container"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/white">
+    </EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/updateStats"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputDeaths"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="Update Stats"
+        android:background="@drawable/in_use_button_states"
+        android:textColor="@drawable/pressed_text_color"/>
+
+</RelativeLayout>

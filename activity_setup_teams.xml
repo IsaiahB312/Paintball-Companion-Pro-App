@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setup_teams"
+    android:background="@drawable/paintball_bg"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/ts_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/punishment"
+        android:text="Team Setup"
+        android:textColor="@color/white"
+        android:textSize="42dp"
+        android:background="@drawable/tinted_title_background">
+    </TextView>
+
+<!--    Team 1    -->
+    <EditText
+        android:id="@+id/t1pa"
+        android:fontFamily="@font/aldrich"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:hint="Name of Player"
+        android:background="@drawable/tinted_text_container"
+        android:textColorHint="@color/tintedWhite"
+        android:textColor="@color/white"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/ts_title"
+        android:layout_marginTop="25dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addP_t1"
+        android:layout_width="160dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/t1pa"
+        android:layout_alignParentLeft="true"
+        android:text="Add Player to      Team 1"
+        android:background="@drawable/in_use_button_states"
+        android:textColor="@drawable/pressed_text_color"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/aldrich">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <EditText
+        android:id="@+id/t1pd"
+        android:fontFamily="@font/aldrich"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:hint="Name of Player"
+        android:layout_below="@+id/addP_t1"
+        android:background="@drawable/tinted_text_container"
+        android:textColorHint="@color/tintedWhite"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/delP_t1"
+        android:layout_width="160dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/t1pd"
+        android:layout_alignParentLeft="true"
+        android:text="Delete Player from Team 1"
+        android:background="@drawable/in_use_button_states"
+        android:textColor="@drawable/pressed_text_color"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/aldrich">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <Spinner
+        android:id="@+id/lives_options1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ts_life_title"
+        android:layout_alignParentLeft="true"
+        android:backgroundTint="@color/black"/>
+
+    <!--    Team 2    -->
+
+    <EditText
+        android:id="@+id/t2pa"
+        android:fontFamily="@font/aldrich"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:hint="Name of Player"
+        android:background="@drawable/tinted_text_container"
+        android:textColorHint="@color/tintedWhite"
+        android:textColor="@color/white"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/ts_title"
+        android:layout_marginTop="25dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addP_t2"
+        android:layout_width="160dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/t2pa"
+        android:layout_alignParentRight="true"
+        android:text="Add Player to      Team 2"
+        android:background="@drawable/in_use_button_states"
+        android:textColor="@drawable/pressed_text_color"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/aldrich">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <EditText
+        android:id="@+id/t2pd"
+        android:fontFamily="@font/aldrich"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:hint="Name of Player"
+        android:layout_below="@+id/addP_t2"
+        android:background="@drawable/tinted_text_container"
+        android:textColorHint="@color/tintedWhite"
+        android:textColor="@color/white"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="30dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/delP_t2"
+        android:layout_width="160dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/t2pd"
+        android:layout_alignParentRight="true"
+        android:text="Delete Player from Team 2"
+        android:background="@drawable/in_use_button_states"
+        android:textColor="@drawable/pressed_text_color"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/aldrich">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <Spinner
+        android:id="@+id/lives_options2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ts_life_title"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/black" />
+
+    <!--    Setup game button-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startGame"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/in_use_button_states"
+        android:fontFamily="@font/aldrich"
+        android:text="Start Game"
+        android:textColor="@drawable/pressed_text_color" />
+
+    <!--   Life title-->
+    <TextView
+        android:id="@+id/ts_life_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/delP_t1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/punishment"
+        android:text="Select Lives"
+        android:textColor="@color/white"
+        android:textSize="42dp"
+        android:background="@drawable/tinted_title_background">
+    </TextView>
+
+</RelativeLayout>
